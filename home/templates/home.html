@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <div class="linkedinpic">
   <div class="linkedin">
-    <a href="https://www.linkedin.com/in/isaiahmolina/"><img src="https://win98icons.alexmeub.com/icons/png/executable-0.png" style="position:absolute;float: right; top:15; left:1%;" width='55' height='55'></a>
+    <a href="https://www.linkedin.com/in/isaiahmolina/" target="_blank"><img src="https://win98icons.alexmeub.com/icons/png/executable-0.png" style="position:absolute;float: right; top:15; left:1%;" width='55' height='55'></a>
     <p class="text1">LinkedIn</p>
   </div>
 </div>
 <div class="Instagrampic">
   <div class="instagram">
-    <a href="https://www.instagram.com/xvmolina/"><img src="https://win98icons.alexmeub.com/icons/png/world-0.png" style="position:absolute;float: right; top:10%; left:1%;" width='55' height='55'></a>
+    <a href="https://www.instagram.com/xvmolina/" target="_blank"><img src="https://win98icons.alexmeub.com/icons/png/world-0.png" style="position:absolute;float: right; top:10%; left:1%;" width='55' height='55'></a>
     <p class="text2">Instagram</p>
   </div>
 </div>
 <div class="Githubpic">
   <div class="Github">
-    <a href="https://github.com/IsaiahMolina"><img src="https://win98icons.alexmeub.com/icons/png/directory_folder_options-4.png" style="position:absolute;float: right; top:20%; left:1%;" width='55' height='55'></a>
+    <a href="https://github.com/molin6" target="_blank"><img src="https://win98icons.alexmeub.com/icons/png/directory_folder_options-4.png" style="position:absolute;float: right; top:20%; left:1%;" width='55' height='55'></a>
     <p class="text3">Github</p>
   </div>
 </div>
@@ -23,6 +23,26 @@
 </div>
 <div class='botlogo'>
   <img src="https://win98icons.alexmeub.com/icons/png/windows-0.png" style="position:absolute;float: right; bottom:0%; left:1%;" width='28' height='28'></a>
+</div>
+<!-- Trigger/Open The Modal -->
+<button id="myBtn" class="Btn">
+  <img src="https://win98icons.alexmeub.com/icons/png/notepad_file-2.png" style="position:absolute;float: right; top:30%; left:1%;" width='55' height='55'></button>
+  <p class="text4">Contact</p>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p class="text5">
+    Name: Isaiah Molina <br> 
+    Email: Isaiah90molina@gmail.com <br>
+    Phone: 479-220-9725 <br>
+
+  </p>
+  </div>
+
 </div>
 <html lang="en">
 <html>
@@ -60,6 +80,16 @@
   text-align: center; 
   left:1%;
 }
+.text4{
+  position: absolute;
+  bottom:60%;
+  color: white;
+  text-align: center; 
+  left:1%;
+}
+.text5{
+  color: #20C20E; 
+}
 .bottcred{
   position: absolute;
   bottom:-40%;
@@ -68,7 +98,49 @@
 }
 /* Page Content */
 .content {padding:20px;}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
+/* Modal Content */
+.modal-content {
+  background-color: #000000;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.Btn {
+  background: transparent;
+  border: none !important;
+  font-size:0;
+}
 
 </style>
 
@@ -76,7 +148,33 @@
 <body style='background-color: darkcyan;'>
 
 </div>
+<script>  
+// Get the modal
+var modal = document.getElementById("myModal");
 
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 
 </body>
 </html>
